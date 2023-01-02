@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img :src="oneRooms.image" class="room-img">
-    <h4 @click="$emit('openModal')"> {{ oneRooms.title }}</h4>
-    <p>{{ oneRooms.price }}원</p>
+    <img :src="oneRoom.image" class="room-img">
+    <h4> {{ oneRoom.title }}</h4>
+    <p>{{ oneRoom.price }}원</p>
 <!--    <button @click="increase(i)">허위매물 신고</button>-->
 <!--    <span> 신고 누적수 : {{num[i]}}</span>-->
   </div>

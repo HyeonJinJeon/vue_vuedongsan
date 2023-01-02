@@ -7,14 +7,8 @@
   </div>
 
   <Discount/>
-  <Card oneRoom="oneRooms[1]"/>
-  <Card/>
-  <Card/>
-  <Card/>
-  <Card/>
-  <Card/>
 
-  <Card @openmodal="modalWindow=true" v-for="(data, i) in oneRooms" :key="i" :oneRooms="oneRooms"/>
+  <Card @openmodal="modalWindow=true" v-for="(data, i) in oneRooms" :key="i" :oneRoom="oneRooms[i]"/>
 <!--  <Card-->
 <!--        :oneRooms="oneRooms" :modalWindow="modalWindow"-->
 <!--        :clickRoom="clickRoom" :increse="increase" :num="num"-->
